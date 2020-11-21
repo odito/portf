@@ -1,0 +1,38 @@
+
+.edit{
+    min-height: 70vh;
+}
+
+.edit .same-component{
+    display: block;
+    max-width: 400px;
+    margin:0 auto;
+    margin-top: 50px;
+}
+
+.same-form .btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn{
+    background: crimson;
+}
+
+.cancel-btn:hover{
+    background: rgb(214, 51, 84);
+}
+
+.updated{
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color:green;
+    /* display: none; */
+}
+
+.new-upadete{
+  
+    display: block;
+}

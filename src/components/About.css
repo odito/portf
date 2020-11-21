@@ -1,0 +1,29 @@
+
+
+.about{
+    margin:20px 0;
+}
+
+/* .about h2{
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    border-bottom: 1px dashed rgb(9, 93, 119);
+    color:rgb(9, 93, 119);
+    margin-bottom: 15px;
+} */
+
+.about-info p span{
+   font-weight: bold;
+   font-size: 25px; 
+   color:rgb(46, 45, 45);
+   font-style: italic;
+   padding-right: 2px;
+  
+}
+
+.about-info p{
+  
+    font-size: 18px; 
+    color:rgb(48, 47, 47);
+   line-height: 1.5;
+ }

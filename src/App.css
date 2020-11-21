@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+
+.main-container,.contact, .main-title{
+    max-width: 1280px;
+    margin:0 auto;
+    padding:0 10px;
+}
+
+/* .main-title{
+   padding:0 10px;
+   max-width: 1280px;
+   margin:0 auto;
+} */
+
+
+
+.title{
+        letter-spacing: 0.1rem;
+        font-style: italic;
+        border-bottom: 1px dashed rgb(9, 93, 119);
+        color:rgb(9, 93, 119);
+        margin:0 auto;
+        margin-bottom: 20px;
+        max-width: 1280px;
+ 
+}
+
+
+
+.App{
+    /* background: #f3f1f1;  */
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width:100%;
+    height: 400px;
+    max-width: 1400px;
+    margin:0 auto;
+    position: relative;
+}
+
+
+.particle{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+.particleComp{
+    background: rgb(17, 115, 145);
+}
+
+.fullName{
+    position: absolute;
+    top:6rem;
+    text-align: center;
+    left:50%;
+    right:0;
+    width: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.fullName h1{
+    color: rgb(241, 240, 240);
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(21, 164, 221), 0 0 0.2em rgb(17, 17, 17);
+    
+}
+
+/* for text typing animation */
+/* 
+.fullName h1{
+    color: white;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    animation:typing 10s  forwards,
+    blink-caret  1s step-end infinite;
+   animation-iteration-count: infinite;
+   border-right: 4px solid #fff;
+   overflow: hidden;
+}
+
+
+@keyframes blink-caret{
+    from,to{
+        border-color: transparent;
+        padding:0;
+        margin:0;
+     }
+    50%{  border-color: #fff;}
+}
+
+
+@keyframes typing{
+    0%{
+         width:0;
+        
+     }
+     30%{
+         width: 95%;
+     }
+     80%{
+        width: 95%;
+    }
+    90%{
+        width: 0%;
+    }
+   
+     100%{
+       width: 0%;
+     
+   }
+} */
+
+/* and for text typing animation */
+
+
+
+.fullName h2{
+    color: white;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
+
+.cv{
+    position: absolute;
+    top:3rem;
+    right: 1rem;
+}
+
+.cv span b{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(231, 229, 229);letter-spacing: 0.1rem;
+    font-style: italic;
+
+}
+
+.cv span .fa-file-pdf{
+   color:white;
+   font-size: 25px;
+   margin-left:5px;
+   background: red; 
+   transition:  all 0.2s ease-in-out;
+}
+
+.cv:hover .fa-file-pdf{
+    transform:scale(1.2)
+}
+
+ .personalInfo-details .info{
+    border:1px solid lightgray;
+    margin:5px 0;
+    padding:5px;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    width:100%;
+  }
+
+  .personalInfo-details .info label{
+   text-decoration: underline;
+   color: white ;
+  
+}
+
+  .personalInfo-details .info h4{
+    font-style: italic;
+    color: rgb(236, 235, 235) ;
+    margin-top:5px;
+  }
+
+  .personalInfo{
+    position: relative;
+    width:98%;
+     margin:0 auto;
+     box-shadow: 1px 1px 4px 3px rgba(197, 196, 197, 0.479);
+     padding:5px;
+     transition: all 0.3s ease-in-out;
+     margin-top: -100px;
+     
+ }
+
+  .personalInfo-center{
+    display: flex;
+    width:100%;
+    margin:0 auto;
+    justify-content: space-between;
+    padding:0 10px;
+    padding:5px;
+    /* background: grey; */
+    /* background: rgb(17, 115, 145); */
+    background: rgb(9, 93, 119);
+    border-radius: 5px;
+  
+   
+  }
+
+  /* .personalInfo:hover{
+      transform: translateY(-50px);
+      color: white !important;
+  } */
+
+  .personalInfo-details{
+      flex:0 0 calc(68% - 10px);
+  }
+
+  .personalInfo-img{
+      flex:0 0 calc(32% - 10px);
+      display: block;
+      align-self: center;
+  }
+
+  .personalInfo-img img{
+      width:100%;
+      border-radius: 5px;
+      border:1px solid lightgray;
+      padding:5px;
+    }
+
+
+@media screen and (min-width:664px){
+   
+    .fullName{
+        top:4rem;
+        width:300px;
+    }
+.personalInfo{
+    max-width: 460px;
+    width:100%;
+    margin:0 auto; 
+    margin-top: -100px;  
+    }
+
+.personalInfo-details{
+    flex:0 0 calc(64% - 10px);
+}
+
+.personalInfo-img{
+    flex:0 0 calc(36% - 10px);
+    display: block;
+    align-self: center;
+}
+}
+
+
+@media screen and (min-width:960px){
+    
+.fullName{
+    left:25%;
+}
+
+.fullName h1{
+    font-size: 40px;
+    position: relative;
+    padding:5px;  
+}
+
+
+.fullName h2{
+    color: white;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    font-size: 35px;
+    /* border-bottom: 2px solid lightgray; */
+    
+}
+
+
+
+ .cv{
+    top:2rem;
+    right: 4rem;
+}
+
+.personalInfo{
+    position: relative;
+    margin-top: -120px;
+    max-width: 440px;
+ }
+}
